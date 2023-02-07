@@ -9,12 +9,12 @@ const res = await data.json();
       <div className="grid gap-16 grid-cols-fluid">
         {res.results.map((movie) => (
           <Movie
-            key={movie.id}
-            id={movie.id}
-            title={movie.title}
-            poster_path={movie.poster_path}
-            vote_average={movie.vote_average}
-            vote_count={movie.vote_count}
+            key={movie?.id}
+            id={movie?.id}
+            title={movie?.title}
+            poster_path={movie?.poster_path}
+            vote_average={movie?.vote_average}
+            vote_count={movie?.vote_count}
           />
         ))}
       </div>

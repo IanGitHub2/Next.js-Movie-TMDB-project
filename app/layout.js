@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={`${montserrat.className} mx-12 my-12`}>
+      <body className={`${montserrat?.className} mx-12 my-12`}>
         {children}
       </body>
     </html>
